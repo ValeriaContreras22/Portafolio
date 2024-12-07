@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Hojas de estilos -->
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/recent-posts.css">
+    <link rel="stylesheet" href="css/featured-works.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__icon-home">
+            <a href="index.html">
+                <img src="icons/home.svg" alt="Ícono de Home" aria-label="Ícono de Home">
+            </a>
+        </div>
+        <nav class="nav">
+            <a href="work.html" class="nav__link">Works</a>
+            <a href="blog.html" class="nav__link">Blog</a>
+            <a href="#" class="nav__link">Contact</a>
+            <!-- Botón de menú móvil -->
+            <a href="#" class="nav__link nav__link--icon-only" aria-label="Open menu" role="button">
+                <div class="menu">
+                    <div class="menu__linea"></div>
+                    <div class="menu__linea"></div>
+                    <div class="menu__linea"></div>
+                </div>
+            </a>
+        </nav>
+    </header>
+    <main class="main">
+        <!-- Sección HERO -->
+        <section class="container container--home container--hero hero">
+            <div class="hero__container">
+                <div class="hero__info">
+                    <h1 class="hero__title">
+                        Hola, soy Valeria<br/>Diseñadora Creativa
+                    </h1>
+                    <p class="hero__description">
+                        Actualmente estudiante de diseño gráfico con interés creciente en la moda, enfocada en explorar la creación de identidades visuales y conceptos estéticos para marcas. Apasionada por las tendencias, el branding y el diseño editorial, busca conectar creatividad gráfica con estilo y funcionalidad en la industria de la moda.
+                    </p>
+                </div>
+                <div class="hero__image">
+                    <div class="hero__image-container">
+                        <div class="hero__image-shadow" aria-hidden="true"></div>
+                        <img src="./assets/img/Diseño sin título.png" alt="Imagen de Perfíl" aria-label="Imagen de Perfíl" class="hero__image-img" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <div class="hero__button">
+                <a class="hero__button-link" href="./assets/documents/hoja de vida1_compressed.pdf" download="hoja de vida1_compressed" aria-label="Descargar currículum">Download Resume</a>
+            </div>
+        </section>
+
+        <!-- Sección RECENT POSTS -->
+        <section class="recent-posts">
+            <div class="container container--home container--recentposts">
+                <header class="recent-posts__header">
+                    <h2 class="recent-posts__title">Proyectos recientes</h2>
+                    <a class="recent-posts__viewall recent-posts__viewall--hidden" href="#" aria-label="View all posts">ver</a>
+                </header>
+                <div class="recent-posts__content">
+                    <article class="card-post">
+                        <div class="card-post__title-container">
+                            <h3 class="card-post__title">Diseño de Estampados</h3>
+                        </div>
+                        <div class="card-post__metadata">
+                            <time class="card-post__metadata-text card-post__metadata-text--date-space" datetime="2024-02-12">12 Feb 2024</time>
+                            <span class="card-post__metadata-text">|</span>
+                            <span class="card-post__metadata-text">Confecciones Calcol S.A.S</span>
+                        </div>
+                        <p class="card-post__description">
+                            En Calcol S.A.S me asignaron el puesto de diseñadora de textiles a diferentes clientes de la empresa.
+                        </p>
+                    </article>
+                    <article class="card-post">
+                        <div class="card-post__title-container">
+                            <h3 class="card-post__title">Colaboracion para revista sobre Saul Bass</h3>
+                        </div>
+                        <div class="card-post__metadata">
+                            <time class="card-post__metadata-text card-post__metadata-text--date-space" datetime="2024-11-05"> 05 Nov 2024</time>
+                            <span class="card-post__metadata-text">|</span>
+                            <span class="card-post__metadata-text">Colaboracion con otra Diseñadora</span>
+                        </div>
+                        <p class="card-post__description">
+                            En colaboración de otra diseñadora, creamos una revista corta que se tratara del diseñador gráfico Saul Bass.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>  
+
+        <!-- Sección Featured-Works -->
+        <section class="container container--home container--featured featured">
+            <header class="featured__header">
+                <h2 class="featured__title">Otros trabajos</h2>
+            </header>
+            <div class="featured__content">
+                <article class="card">
+                    <div class="card__img-container">
+                        <div class="card__img">
+                            <img src="assets/img/trabajoss-03.png" alt="Imagen de Marca de Belleza" aria-label="Imagen de Marca de Belleza" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="card__content">
+                        <header class="card__content-header">
+                            <h3 class="card__content-title">
+                                <a class="card__content-link" href="workdetail.html" title="Leer más sobre Marca de Belleza">Marca de Belleza</a>
+                            </h3>
+                            <div class="card__content-metadata">
+                                <span class="card__content-metadata-date">2022</span>
+                                <span class="card__content-metadata-text">Diseño</span>
+                            </div>
+                        </header>
+                        <p class="card__content-description">
+                            Proyecto de Cliente externo.
+                        </p>
+                    </div>
+                </article>
+                <article class="card card--hidden">
+                    <div class="card__img-container">
+                        <div class="card__img">
+                            <img src="assets/img/trabajoss-02.png" alt="Imagen de Diseño de Logo" aria-label="Imagen de Diseño de Logo" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="card__content">
+                        <header class="card__content-header">
+                            <h3 class="card__content-title">
+                                <a class="card__content-link" href="#" title="Leer más sobre Diseño de Logo">Diseño de Logo</a>
+                            </h3>
+                            <div class="card__content-metadata">
+                                <span class="card__content-metadata-date">2023</span>
+                                <span class="card__content-metadata-text">Diseño</span>
+                            </div>
+                        </header>
+                        <p class="card__content-description">
+                            Diseño de Logo para cliente de Calcol S.A.S
+                        </p>
+                    </div>
+                </article>
+                <article class="card card--hidden">
+                    <div class="card__img-container">
+                        <div class="card__img">
+                            <img src="assets/img/trabajoss-01.png" alt="Imagen de Diseño de Etiquetas" aria-label="Imagen de Diseño de Etiquetas" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="card__content">
+                        <header class="card__content-header">
+                            <h3 class="card__content-title">
+                                <a class="card__content-link" href="#" title="Leer más sobre Diseño de Etiquetas">Diseño de Etiquetas</a>
+                            </h3>
+                            <div class="card__content-metadata">
+                                <span class="card__content-metadata-date">2023</span>
+                                <span class="card__content-metadata-text">Diseño</span>
+                            </div>
+                        </header>
+                        <p class="card__content-description">
+                            Diseño de Etiquetas para cliente de Calcol S.A.S.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__icons">
+                <img src="icons/fb.svg" alt="Ícono de Facebook" aria-label="Facebook">
+                <img src="icons/insta.svg" alt="Ícono de Instagram" aria-label="Instagram">
+                <img src="icons/Group.svg" alt="Ícono de Twitter" aria-label="Twitter">
+                <img src="icons/Linkedin.svg" alt="Ícono de LinkedIn" aria-label="LinkedIn">
+            </div>
+            <div class="footer__copyright">
+                <span class="footer__copyright-text">Copyright ©2020 All rights reserved</span>
+            </div>
+        </div>
+    </footer> 
+</body>
+</html>

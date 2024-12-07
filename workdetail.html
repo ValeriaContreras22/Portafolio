@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designing Dashboards with usability in mind</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Hojas de estilos -->
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/featured-works.css">
+    <link rel="stylesheet" href="css/work-detail.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__icon-home">
+            <a href="index.html">
+                <img src="icons/home.svg" alt="Ícono de Home" aria-label="Ícono de Home">
+            </a>
+        </div>
+        <nav class="nav">
+            <a href="work.html" class="nav__link nav__link--actived" aria-current="page">Works</a>
+            <a href="blog.html" class="nav__link">Blog</a>
+            <a href="#" class="nav__link">Contact</a>
+            <!-- Botón de menú móvil -->
+            <a href="#" class="nav__link nav__link--icon-only" aria-label="Open menu" role="button">
+                <div class="menu">
+                    <div class="menu__linea"></div>
+                    <div class="menu__linea"></div>
+                    <div class="menu__linea"></div>
+                </div>
+            </a>
+        </nav>
+    </header>
+    <main class="main main--work-detail">
+        <div class="container main-work-detail-content">
+            <!-- Sección Work Detail Card -->
+            <section class="work-detail">
+                <article class="card card--work-detail">
+                    <div class="card__img-container">
+                        <div class="card__img card__img--work-detail">
+                            <img src="assets/img/img1.jpeg" alt="Imagen de marca de Belleza" aria-label="Imagen de marca de Belleza" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="card__content card__content--work-detail">
+                        <h3 class="card__content-title card__content-title--work-detail">Aquí te hablo un poco más sobre la marca de Belleza</h3>
+                        <div class="card__content-metadata card__content-metadata--work-detail">
+                            <span class="card__content-metadata-date card__content-metadata-date--work-detail">2022</span>
+                            <span class="card__content-metadata-text card__content-metadata-text--work-detail">Marca de Belleza</span>
+                        </div>
+                        <p class="card__content-description card__content-description--work-detail">
+                            "Lumière Éclat" significa "Luz y Brillo" en francés, reflejando su enfoque en resaltar la belleza natural y la luminosidad de cada persona.
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Sección Heading -->
+            <section class="heading">
+                <header class="heading__header">
+                    <div class="heading__titles">
+                        <h4 class="heading__title-one">Lumière Éclat</h4>
+                        <h6 class="heading__title-two">Brilla con tu luz natural.</h6>
+                    </div>
+                    <div class="heading__info">
+                        <p>Lumière Éclat marca de productos de belleza creada para transmitir elegancia, lujo y sostenibilidad, enfocándose en ofrecer una experiencia integral de belleza que empodere a las mujeres mientras respeta el medio ambiente..</p>
+                    </div>
+                </header>
+                <div class="heading__img-container">
+                    <div class="heading__img-1">
+                        <img src="assets/img/img2.jpeg" alt="Imagen de etiqueta 1" aria-label="Imagen de etiqueta 1" loading="lazy">
+                    </div>
+                    <div class="heading__img-2">
+                        <img src="assets/img/img3.jpeg" alt="Imagen de etiqueta 2" aria-label="Imagen de etiqueta 2" loading="lazy">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__icons">
+                <img src="icons/fb.svg" alt="Ícono de Facebook" aria-label="Facebook">
+                <img src="icons/insta.svg" alt="Ícono de Instagram" aria-label="Instagram">
+                <img src="icons/Group.svg" alt="Ícono de Twitter" aria-label="Twitter">
+                <img src="icons/Linkedin.svg" alt="Ícono de LinkedIn" aria-label="LinkedIn">
+            </div>
+            <div class="footer__copyright">
+                <span class="footer__copyright-text">Copyright ©2020 All rights reserved</span>
+            </div>
+        </div>
+    </footer> 
+</body>
+</html>

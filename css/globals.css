@@ -1,0 +1,169 @@
+/* Resetear todos los estilos por defecto de la página */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* Declaración de variables */
+:root {
+    --primary: rgba(255, 100, 100, 1);
+    --secondary: rgba(0, 168, 204, 1);
+    --dark: rgba(33, 36, 61, 1);
+    --dark-2: rgba(20, 40, 80, 1);
+    --light: rgba(134, 149, 164, 1);
+    --black: rgba(0, 0, 0, 1);
+    --gray: rgba(224, 224, 224, 1);
+    --white: rgba(255, 255, 255, 1);
+    --light-blue: rgba(237, 247, 250, 1);
+    --font-family: "Heebo", Helvetica;
+
+    --desktop-heading-h1-font-weight: 700;
+    --desktop-heading-h1-font-size: 44px;
+    --desktop-heading-h1-line-height: 60px;
+
+    --desktop-heading-h2-font-weight: 700;
+    --desktop-heading-h2-font-size: 34px;
+    --desktop-heading-h2-line-height: 49.939998626708984px;
+
+    --desktop-heading-h3-font-weight: 700;
+    --desktop-heading-h3-font-size: 30px;
+    --desktop-heading-h3-line-height: 44.060001373291016px;
+
+    --desktop-heading-h4-font-weight: 500;
+    --desktop-heading-h4-font-size: 30px;
+    --desktop-heading-h4-line-height: 44.060001373291016px;
+
+    --desktop-heading-h5-font-weight: 700;
+    --desktop-heading-h5-font-size: 26px;
+    --desktop-heading-h5-line-height: 38.189998626708984px;
+
+    --desktop-heading-h6-font-weight: 500;
+    --desktop-heading-h6-font-size: 24px;
+    --desktop-heading-h6-line-height: 60px;
+
+    --desktop-body-large-text-regular-label-font-weight: 400;
+    --desktop-body-large-text-regular-label-font-size: 22px;
+    --desktop-body-large-text-regular-label-line-height: 60px;
+
+    --desktop-body-large-text-regular-font-weight: 400;
+    --desktop-body-large-text-regular-font-size: 20px;
+    --desktop-body-large-text-regular-line-height: 29.3799991607666px;
+
+    --desktop-body-medium-text-black-font-weight: 900;
+    --desktop-body-medium-text-black-font-size: 18px;
+    --desktop-body-medium-text-black-line-height: normal;
+
+    --desktop-body-medium-text-regular-font-weight: 400;
+    --desktop-body-medium-text-regular-font-size: 18px;
+    --desktop-body-medium-text-regular-line-height: 26.440000534057617px;
+
+    --desktop-body-normal-text-regular-font-weight: 400;
+    --desktop-body-normal-text-regular-font-size: 16px;
+    --desktop-body-normal-text-regular-line-height: 23.5px;
+
+    --desktop-body-small-text-regular-font-weight: 400;
+    --desktop-body-small-text-regular-font-size: 14px;
+    --desktop-body-small-text-regular-line-height: normal;
+
+    --desktop-buttons-pagination-medium-text-font-weight: 500;
+    --desktop-buttons-pagination-medium-text-font-size: 20px;
+    --desktop-buttons-pagination-medium-text-line-height: 29.3799991607666px;
+
+    --mobile-heading-h1-font-weight: 700;
+    --mobile-heading-h1-font-size: 32px;
+    --mobile-heading-h1-line-height: 40px;
+
+    --mobile-heading-h2-font-weight: 700;
+    --mobile-heading-h2-font-size: 30px;
+    --mobile-heading-h2-line-height: 60px;
+
+    --mobile-heading-h3-font-weight: 500;
+    --mobile-heading-h3-font-size: 26px;
+    --mobile-heading-h3-line-height: 38.189998626708984px;
+
+    --mobile-heading-h4-font-weight: 700;
+    --mobile-heading-h4-font-size: 24px;
+    --mobile-heading-h4-line-height: 30px;
+
+    --mobile-heading-h5-font-weight: 700;
+    --mobile-heading-h5-font-size: 22px;
+    --mobile-heading-h5-line-height: 30px;
+
+    --mobile-heading-h6-font-weight: 500;
+    --mobile-heading-h6-font-size: 20px;
+    --mobile-heading-h6-line-height: 60px;
+
+    --mobile-body-large-text-black-font-weight: 900;
+    --mobile-body-large-text-black-font-size: 18px;
+    --mobile-body-large-text-black-line-height: 60px;
+
+    --mobile-body-large-text-regular-font-weight: 400;
+    --mobile-body-large-text-regular-font-size: 18px;
+    --mobile-body-large-text-regular-line-height: 60px;
+
+    --mobile-body-large-text-regular-2-font-weight: 400;
+    --mobile-body-large-text-regular-2-font-size: 18px;
+    --mobile-body-large-text-regular-2-line-height: 26.440000534057617px;
+
+    --mobile-body-normal-text-black-font-weight: 900;
+    --mobile-body-normal-text-black-font-size: 16px;
+    --mobile-body-normal-text-black-line-height: normal;
+
+    --mobile-body-normal-text-regular-font-weight: 400;
+    --mobile-body-normal-text-regular-font-size: 16px;
+    --mobile-body-normal-text-regular-line-height: 23.5px;
+
+    --mobile-body-small-text-regular-font-weight: 400;
+    --mobile-body-small-text-regular-font-size: 14px;
+    --mobile-body-small-text-regular-line-height: normal;
+
+    --mobile-buttons-pagination-medium-text-font-weight: 500;
+    --mobile-buttons-pagination-medium-text-font-size: 20px;
+    --mobile-buttons-pagination-medium-text-line-height: 29.3799991607666px;
+
+    /* Dimensiones de la página */
+    --page-max-width: 1152px;
+    --page-min-width: 375px;
+
+    /* Dimensiones del contenido de la página */
+    --desktop-padding-normal-content: 235px;
+
+    --mobile-padding-normal-content-left: 12px;
+    --mobile-padding-normal-content-right: 11px;
+
+  }
+
+/* Estilos generales de la página*/
+body{
+    background-color: var(--white);
+    font-family: var(--font-family);
+    min-width: var(--page-min-width);
+    max-width: var(--page-max-width);
+    margin: 0 auto;
+}
+
+/* Estilos Globales */
+.container{
+    padding-left: var(--desktop-padding-normal-content);
+    padding-right: var(--desktop-padding-normal-content);
+}
+
+.main{
+    width: 100%;
+    padding-top: 126px;
+    padding-bottom: 64px;
+}
+
+@media (max-width: 975px) {
+    .container{
+        padding-left: var(--mobile-padding-normal-content-left);
+        padding-right: var(--mobile-padding-normal-content-right);
+    }
+
+    .main{
+        padding-top: 33px;
+        padding-bottom: 144px;
+    }
+}
